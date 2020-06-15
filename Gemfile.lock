@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/julienemo/table_print.git
+  revision: ede74503dbaa9937aacaa817cd6e97b766221a0b
+  branch: 84_bug_no_method_error_in_ruby_2.7.1
+  specs:
+    table_print (1.5.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -217,6 +224,7 @@ DEPENDENCIES
   rubocop (>= 0.85.0)
   spring
   spring-watcher-listen (~> 2.0.0)
+  table_print!
   tzinfo-data
 
 RUBY VERSION

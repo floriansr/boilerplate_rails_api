@@ -9,6 +9,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'rack-cors', '~> 1.1', '>= 1.1.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
+gem 'table_print', git: 'git://github.com/julienemo/table_print.git', branch: '84_bug_no_method_error_in_ruby_2.7.1'
 
 group :development, :test do
 	 gem 'byebug', platforms: %i[mri mingw x64_mingw]
