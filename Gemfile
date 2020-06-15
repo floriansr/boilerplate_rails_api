@@ -11,15 +11,15 @@ gem 'rack-cors', '~> 1.1', '>= 1.1.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 
 group :development, :test do
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'rubocop', '>= 0.85.0'
+	 gem 'byebug', platforms: %i[mri mingw x64_mingw]
+	 gem 'rubocop', '>= 0.85.0'
 end
 
 group :development do
-  gem 'dotenv-rails'
-  gem 'listen', '~> 3.2'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+	 gem 'dotenv-rails'
+	 gem 'listen', '~> 3.2'
+	 gem 'spring'
+	 gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

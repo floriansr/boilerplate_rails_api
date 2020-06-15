@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::API
-
   before_action :sanitize_devise_params, if: :devise_controller?
   include ActionController::MimeResponds
   respond_to :json
@@ -7,5 +6,4 @@ class ApplicationController < ActionController::API
   def sanitize_devise_params
     devise_parameter_sanitizer.permit(:sign_up, keys: [:username])
   end
-
 end
