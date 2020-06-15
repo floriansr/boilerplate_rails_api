@@ -1,11 +1,17 @@
 AllCops:
   Exclude:
-    - "bin/bundle"
+    - "bin/**/*"
     - "config/**/*"
-    - "db/schema.rb"
+    - "db/**/*"
     - "app/channels/**/*"
+    - "test/**/*"
+    - "spec/**/*"
+    - "tmp/**/*"
 
 # Styles
+Style/GuardClause:
+  MinBodyLength: 5
+
 Style/Documentation:
   Enabled: false
 
@@ -34,6 +40,9 @@ Style/TrailingCommaInHashLiteral:
 Metrics/MethodLength:
   Max: 20
 
+Metrics/BlockLength:
+  Max: 35
+
 Metrics/AbcSize:
   Enabled: false
 
@@ -44,11 +53,14 @@ Metrics/PerceivedComplexity:
   Enabled: false
 
 # Layouts
+Layout/IndentationConsistency:
+  EnforcedStyle: normal
+
 Layout/IndentationWidth:
   Width: 2
 
 Layout/LineLength:
-  Max: 100
+  Max: 120
 
 Layout/IndentationStyle:
   Enabled: false
@@ -78,10 +90,7 @@ Layout/EmptyLinesAroundBlockBody:
   EnforcedStyle: no_empty_lines
 
 Layout/EmptyLinesAroundClassBody:
-  EnforcedStyle: empty_lines_except_namespace
-
-Layout/IndentationConsistency:
-  EnforcedStyle: normal
+  EnforcedStyle: no_empty_lines
 
 Layout/MultilineOperationIndentation:
   EnforcedStyle: aligned
